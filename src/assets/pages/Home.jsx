@@ -15,7 +15,7 @@ function Home() {
     formData.append("gst_file",gstFile)
     formData.append("purchase_file",purchaseFile)
     try {
-      const response = await axios.post("http://localhost:8000/match-files/",formData,{
+      const response = await axios.post("https://gst-matcher-backend.onrender.com/match-files/",formData,{
         headers:{
           "content-Type":"multipart/form-data",
         },
